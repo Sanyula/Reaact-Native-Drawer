@@ -15,6 +15,7 @@ import {
 } from  './screens';
 
 import Sidebar from './components/SideBar'
+import Carousel from './screens/Carousel';
 
 const tintColor = "#485756";
 const activeMenuBgColor = "rgba(16, 173, 171,0.2)";
@@ -90,9 +91,10 @@ const DrawerNavigator = createDrawerNavigator({
   }
 );
 
-/* //Conditional render
+ //Conditional render
+ /*
 let  app = ()=>{
-  return ( <View><Text>LOGIN</Text> </View>)
+  return ( <Carousel />)
 }
 if(false){
   app = createAppContainer( DrawerNavigator );

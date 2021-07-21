@@ -1,15 +1,11 @@
 import React from 'react';
 import Screen from './Screen';
 import {Text,View } from 'react-native';
+import Home from './Home';
+import Carousel from './Carousel';
 
-export const HomeScreen = ({navigation}) => { return(
-    <Screen navigation={navigation} name="Home" content={
-    <View style={ {flex:1,justifyContent:"center",alignItems:"center"} }>
-       <Text> Hello again </Text>
-    </View>}
-     />
-    )
-}
+export const HomeScreen = ({navigation}) => <Carousel navigation={navigation} name="Home" />
+//export const HomeScreen = ({navigation}) => <Home navigation={navigation} name="Home" />
 export const ProfileScreen = ({navigation}) =><Screen navigation={navigation} name="Profile" />
 export const MessagesScreen = ({navigation}) =><Screen navigation={navigation} name="Messages" />
 export const ActivityScreen = ({navigation}) =><Screen navigation={navigation} name="Activity" />
